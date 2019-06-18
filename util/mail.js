@@ -1,1 +1,2 @@
 function genMail(){}
+function template(){}
