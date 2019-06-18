@@ -28,9 +28,10 @@
 4. manipulate commit: `revert`, `cherry-pink`
     * feature/hotfix commit to wrong branch
 
-
 # branch
-
+1. merge
+2. rebase
+3. pull/push **merge** or **rebase**
 
 
 
