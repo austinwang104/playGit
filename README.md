@@ -2,7 +2,7 @@
 
 
 
-# row
+# forword
 * 先跟大家報告一下git對於我經歷過的一些事情，之前在專案上遇到了一些情況。這些情況非常棘手。那個時候的一個案子分了兩階段在進行。
 1. 第一階段deliver之後，產生了一個production的版本
 2. 第二階段同時在開發，產生了一個所謂的developer的版本
@@ -15,7 +15,16 @@
 2. PG遇到兩個難題，`production`的`hotfix`要進入到`develop`，`develop`的`feature`不要進到`production`，另外一個就是要快速的切換`production`, `develop`的開發。PG每天的時間大約有50%的時間在做這些切換和`feature`&`hotfix`的搬移。
 
 
-* git其實大家都使用過一陣子了，而且都持續地在使用當中所以都算是熟悉。
+# 特點
+1. 差異的方式記錄commit **切換快速**
+2. 分散的方式管理branch **隔離環境**
+
+
+# 特殊用法
+1. gitignore
+2. gitattribute
+3. git-hook
+
 
 #Issue Tracking **包含練習**
 * 建立問題單**修改方向/範圍討論**:SA, QA, PM, USER
