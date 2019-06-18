@@ -1,4 +1,6 @@
 function walk(){}
 function run(){}
 function race(){}
-function car(){}
+function car(){
+	//add new Feature A
+}
