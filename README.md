@@ -17,11 +17,14 @@
 
 * git其實大家都使用過一陣子了，而且都持續地在使用當中所以都算是熟悉。
 
-#Issue Tracking
+#Issue Tracking **包含練習**
 * 建立問題單**修改方向/範圍討論**:SA, QA, PM, USER
 * 根據分支(環境)進行問題修改**保護分支(branch)**
 * 修改程式碼建立認可**commit**: PG
-* 
+
+## 練習
+1. 建立問題單**issue**
+2. 針對問題單進行程式碼修改
 
 # reference
 * [連猴子都能懂得Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro2_4.html)
