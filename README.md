@@ -19,6 +19,13 @@
 1. 差異的方式記錄commit **切換快速**
 2. 分散的方式管理branch **隔離環境**
 
+# commit
+1. work-tree: untrack/change-files/staging-files
+2. add track file
+2. make commit
+
+# branch
+
 
 # 特殊用法
 1. gitignore
