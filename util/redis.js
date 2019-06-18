@@ -1,6 +1,4 @@
-function load(){
-    //feature A
-}
+function load(){}
 function save(){
     //hotfix
 }
