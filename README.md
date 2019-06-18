@@ -21,10 +21,17 @@
 
 # commit
 1. work-tree: untrack/change-files/staging-files
+    * add/remove staging-files
 2. add track file
-2. make commit
+    * add/remove track
+3. make commit
+4. manipulate commit: `revert`, `cherry-pink`
+    * feature/hotfix commit to wrong branch
+
 
 # branch
+
+
 
 
 # 特殊用法
@@ -41,6 +48,11 @@
 ## 練習
 1. 建立問題單**issue**
 2. 針對問題單進行程式碼修改
+
+# future work
+1. ssh-keygen
+2. ci/cd
+3. aws/container
 
 # reference
 * [連猴子都能懂得Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro2_4.html)
