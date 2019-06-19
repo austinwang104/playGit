@@ -30,15 +30,20 @@
 
 # branch
 1. merge
+    * conflict 處理
 2. rebase
+    * rebase --continue
 3. pull/push **merge** or **rebase**
-
 
 
 # 特殊用法
 1. gitignore
+    * .idea/
+    * node_modules/
 2. gitattribute
+    * * -text
 3. git-hook
+    * pre-commit
 
 
 #Issue Tracking **包含練習**
