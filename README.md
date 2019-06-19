@@ -27,6 +27,7 @@
 3. make commit
 4. manipulate commit: `revert`, `cherry-pink`
     * feature/hotfix commit to wrong branch
+5. **DEMO** `bash`, `sourceTree`
 
 # branch
 1. merge
@@ -37,9 +38,10 @@
 
 
 # 特殊用法
-1. gitignore
-    * .idea/
-    * node_modules/
+1. gitignore `不適合放入git控管的檔案設定`
+    * .idea/            `webstorm的設定檔`
+    * node_modules/     `npm srouce file`
+    * `git rm --cache <file-path>`
 2. gitattribute
     * * -text
 3. git-hook
@@ -57,11 +59,13 @@
 3. 修改的程式碼放到對應的分支**branch**，然後進行程式碼審核**code review**，通過後併入，否則重新修訂。
 
 # future work
-1. ssh-keygen
-2. ci/cd
-3. aws/container
+1. bash
+2. ssh-keygen
+3. ci/cd
+4. aws/container
 
 # reference
 * [連猴子都能懂得Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro2_4.html)
 * [ihower的Git教室](https://ihower.tw/git/index.html)
 * [git-document](https://git-scm.com/book/en/v2)
+* [為你自己學 Git](https://gitbook.tw)
