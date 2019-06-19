@@ -16,8 +16,8 @@
 
 
 # 特點
-1. 差異的方式記錄commit **切換快速**
-2. 分散的方式管理branch **隔離環境**
+1. 快照**snapshot**的方式記錄commit **切換快速**
+2. 分散**Decentralization**的方式管理branch **分散式架構，適合隔離環境**
 
 # commit
 1. work-tree: untrack/change-files/staging-files
