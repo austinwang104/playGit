@@ -1,4 +1,6 @@
-function walk(){}
+function walk(){
+	//new feature C ...
+}
 function run(){}
 function race(){}
 function car(){
