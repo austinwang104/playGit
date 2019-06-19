@@ -1,2 +1,4 @@
 function genMail(){}
-function template(){}
+function template(){
+    //new feature kk
+}
