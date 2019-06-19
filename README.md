@@ -30,15 +30,20 @@
 
 # branch
 1. merge
+    * conflict 處理
 2. rebase
+    * rebase --continue
 3. pull/push **merge** or **rebase**
-
 
 
 # 特殊用法
 1. gitignore
+    * .idea/
+    * node_modules/
 2. gitattribute
+    * * -text
 3. git-hook
+    * pre-commit
 
 
 #Issue Tracking **包含練習**
@@ -49,6 +54,7 @@
 ## 練習
 1. 建立問題單**issue**
 2. 針對問題單進行程式碼修改
+3. 修改的程式碼放到對應的分支**branch**，然後進行程式碼審核**code review**，通過後併入，否則重新修訂。
 
 # future work
 1. ssh-keygen
