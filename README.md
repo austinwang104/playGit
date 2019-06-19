@@ -33,7 +33,12 @@
     * conflict 處理
 2. rebase
     * rebase --continue
-3. pull/push **merge** or **rebase**
+
+# sync with server
+1. pull 
+2. push
+3. merge **default**
+4. rebase **option**
 
 
 # 特殊用法
