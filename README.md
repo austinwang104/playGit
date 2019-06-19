@@ -14,10 +14,13 @@
 1. 核心的開發工作在`develop`的版本，`develop`會有很多新開發的功能`feature`,但是開發到一半就會被PM或使用者叫去問`production`的一個bug。然後PG們就會被中斷`developer`的開發，立刻要去修復`production`的問題產生了N個`hotfix`的內容。以SVN切Branch的狀況來說，基本上程式碼都放在不同的位置，因此這個hotfix得要透過人工的方式搬移**compoare**。
 2. PG遇到兩個難題，`production`的`hotfix`要進入到`develop`，`develop`的`feature`不要進到`production`，另外一個就是要快速的切換`production`, `develop`的開發。PG每天的時間大約有50%的時間在做這些切換和`feature`&`hotfix`的搬移。
 
+* `adding svn flow image`
 
 # 特點
 1. 快照**snapshot**的方式記錄commit **切換快速**
+    `adding picture`
 2. 分散**Decentralization**的方式管理branch **分散式架構，適合隔離環境**
+    `adding picture`
 
 # commit
 1. work-tree: untrack/change-files/staging-files
@@ -58,7 +61,7 @@
 * 根據分支(環境)進行問題修改**保護分支(branch)**
 * 修改程式碼建立認可**commit**: PG
 
-## 練習
+## 練習`SA`, `PG`
 1. 建立問題單**issue**
 2. 針對問題單進行程式碼修改
 3. 修改的程式碼放到對應的分支**branch**，然後進行程式碼審核**code review**，通過後併入，否則重新修訂。
