@@ -1,7 +1,9 @@
 function walk(){
 	//new feature C ...
 }
-function run(){}
+function run(){
+	//new feature DD..
+}
 function race(){}
 function car(){
 	//add new Feature A
