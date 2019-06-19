@@ -24,6 +24,8 @@
     * add/remove staging-files
 2. add track file
     * add/remove track
+    * 可能的情形是有個個人設定檔不應該納入git控管，卻又已經上傳了。
+    `sourceTree無法針對特定檔案進行管理，所以此功能僅能透過terminal進行`
 3. make commit
 4. manipulate commit: `revert`, `cherry-pink`
     * feature/hotfix commit to wrong branch
