@@ -3,6 +3,7 @@ function walk(){
 }
 function run(){
 	//new feature DD..
+	//new feature EE..
 }
 function race(){}
 function car(){
