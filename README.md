@@ -45,6 +45,8 @@
     * .idea/            `webstorm的設定檔`
     * node_modules/     `npm srouce file`
     * `git rm --cache <file-path>`
+    * alias
+        `git config --global alias.aa "!git status"`
 2. gitattribute
     * * -text
 3. git-hook
