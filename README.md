@@ -2,7 +2,7 @@
 
 
 
-# forword
+# forword ...add for assume-unchanged
 * 先跟大家報告一下git對於我經歷過的一些事情，之前在專案上遇到了一些情況。這些情況非常棘手。那個時候的一個案子分了兩階段在進行。
 1. 第一階段deliver之後，產生了一個production的版本
 2. 第二階段同時在開發，產生了一個所謂的developer的版本
