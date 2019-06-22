@@ -2,5 +2,5 @@
     "abc":"123",
     "ok":"200",
     "no-found":404,
-    "skip-worktree":test
+    "skip-worktree":'pull ok'
 }
