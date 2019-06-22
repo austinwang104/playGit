@@ -1,19 +1,30 @@
-# Git
+# Git 分享 2019/06/27
 
-# schedule
+## schedule
 1. svn -> git   **`snapshot`, `Decentralization`**
 2. tools    **`bash`, `gitlab`, `vscode`, `tortoise Git`, `SourceTree`**
 3. commit   **`worktree(untracked, changed, unmerged)`, `staged files`, `commit with amend`**
 4. commit-operator    **`reset`, `revert`, `cherry-pick`**
 4. branch   **`tracking(remote)`, `merge`, `rebase`, `pull`, `push`**
-5. Gitlab   **`issue tracking`, `branch by issue?`, `pull request`**
+5. Gitlab   **`issue tracking`, `branch by issue(?)`, `pull request`**
 6. addition **`gitignore`, `gitattribute`, `git-hook`**
 7. reference
     * [連猴子都能懂得Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro2_4.html)
     * [ihower的Git教室](https://ihower.tw/git/index.html)
     * [git-document](https://git-scm.com/book/en/v2)
 
-# using SVN
+## using SVN
+
+* SVN 操作流程
+![](https://github.com/austinwang104/playGit/blob/dev/img/workflow-1.png?raw=true)
+[ref](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjG-u-ei_3iAhWEGqYKHX2_C6wQjhx6BAgBEAI&url=https%3A%2F%2Fens.lal.in2p3.fr%2FPresentations%2FSVN%2Fsvn.html&psig=AOvVaw1EayJnFb7JKn1O7n4LVqjZ&ust=1561292841059189)
+
+* SVN 
+    * 分支採用snapshot **運算成本大**
+    * 比對程式耗時 **beyond compare** **人力成本高**
+    * 應用情況
+    ![](https://github.com/austinwang104/playGit/blob/dev/img/SVN-Git-Dimensions.png?raw=true)
+
 
 # forword ...add for assume-unchanged
 * 先跟大家報告一下git對於我經歷過的一些事情，之前在專案上遇到了一些情況。這些情況非常棘手。那個時候的一個案子分了兩階段在進行。
