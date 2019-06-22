@@ -33,7 +33,7 @@
 * 離開SVN後無法作業 **無法加班**
 * 應用情況
 
-
+![](https://github.com/austinwang104/playGit/blob/dev/img/Centralized-Version-Control-System-Workflow-What-Is-Git-Edureka.png?raw=true)
 
 # forword ...add for assume-unchanged
 * 先跟大家報告一下git對於我經歷過的一些事情，之前在專案上遇到了一些情況。這些情況非常棘手。那個時候的一個案子分了兩階段在進行。
