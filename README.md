@@ -46,12 +46,15 @@
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/Distributed-Version-Control-System-Workflow-What-Is-Git-Edureka.png?raw=true)
 
-# DMEO / 工具
-1. bash
-2. tortoise Git
-3. SourceTree
 
-# commit
+## commit
+1. `worktree(untracked, changed, unmerged)`
+2. `staged files`
+3. `commit amend before push`
+4. commit 結構圖與操作
+
+![](https://github.com/austinwang104/playGit/blob/dev/img/unstage-stage.png?raw=true)
+
 1. work-tree: untrack/change-files/staging-files
     * add/remove staging-files
 2. add track file
