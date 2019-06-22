@@ -24,7 +24,7 @@
     * 比對程式耗時 **beyond compare** **人力成本高**
     * 應用情況
 
-    ![](https://github.com/austinwang104/playGit/blob/dev/img/SVN-Git-Dimensions.png?raw=true)
+    [![](https://github.com/austinwang104/playGit/blob/dev/img/SVN-Git-Dimensions.png?raw=true)]
 
 
 # forword ...add for assume-unchanged
