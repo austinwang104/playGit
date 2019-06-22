@@ -27,7 +27,13 @@
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/2019-06-22_225951.png?raw=true)
 
-### SVN - Centr
+### SVN - Centralized
+
+* 公司程式庫 / 客戶端程式庫 **封閉環境**
+* 離開SVN後無法作業 **無法加班**
+* 應用情況
+
+
 
 # forword ...add for assume-unchanged
 * 先跟大家報告一下git對於我經歷過的一些事情，之前在專案上遇到了一些情況。這些情況非常棘手。那個時候的一個案子分了兩階段在進行。
