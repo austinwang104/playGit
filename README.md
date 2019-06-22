@@ -1,6 +1,19 @@
-# playGit
+# Git
 
+# schedule
+1. svn -> git   **`snapshot`, `Decentralization`**
+2. tools    **`bash`, `gitlab`, `vscode`, `tortoise Git`, `SourceTree`**
+3. commit   **`worktree(untracked, changed, unmerged)`, `staged files`, `commit with amend`**
+4. commit-operator    **`reset`, `revert`, `cherry-pick`**
+4. branch   **`tracking(remote)`, `merge`, `rebase`, `pull`, `push`**
+5. Gitlab   **`issue tracking`, `branch by issue?`, `pull request`**
+6. addition **`gitignore`, `gitattribute`, `git-hook`**
+7. reference
+    * [連猴子都能懂得Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro2_4.html)
+    * [ihower的Git教室](https://ihower.tw/git/index.html)
+    * [git-document](https://git-scm.com/book/en/v2)
 
+# using SVN
 
 # forword ...add for assume-unchanged
 * 先跟大家報告一下git對於我經歷過的一些事情，之前在專案上遇到了一些情況。這些情況非常棘手。那個時候的一個案子分了兩階段在進行。
@@ -22,6 +35,11 @@
 2. 分散**Decentralization**的方式管理branch **分散式架構，適合隔離環境**
     `adding picture`
 
+# DMEO / 工具
+1. bash
+2. tortoise Git
+3. SourceTree
+
 # commit
 1. work-tree: untrack/change-files/staging-files
     * add/remove staging-files
@@ -33,15 +51,14 @@
 4. manipulate commit: `revert`, `cherry-pink`
     * feature/hotfix commit to wrong branch
 
-# branch
+
+# branch / remote
+1. push
+2. pull
 1. merge
     * conflict 處理
 2. rebase
     * rebase --continue
-
-# sync with server
-1. pull 
-2. push
 3. merge **default**
 4. rebase **option**
 
