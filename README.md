@@ -25,14 +25,7 @@
 * 比對程式耗時 **beyond compare** **人力成本高**
 * 應用情況
 
->
-
->
-
-> 
-
-![](https://github.com/austinwang104/playGit/blob/dev/img/SVN-Git-Dimensions.png?raw=true)
-[from](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjG-u-ei_3iAhWEGqYKHX2_C6wQjhx6BAgBEAI&url=https%3A%2F%2Fens.lal.in2p3.fr%2FPresentations%2FSVN%2Fsvn.html&psig=AOvVaw1EayJnFb7JKn1O7n4LVqjZ&ust=1561292841059189)
+![](https://github.com/austinwang104/playGit/blob/dev/img/2019-06-22_225951.png?raw=true)
 
 ### SVN - Centr
 
