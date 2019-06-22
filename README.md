@@ -28,7 +28,7 @@
 * 應用情況
 
 
-![](https://github.com/austinwang104/playGit/blob/dev/img/SVN-Git-Dimensions.png?s=200)}
+![](https://github.com/austinwang104/playGit/blob/dev/img/SVN-Git-Dimensions.png?raw=true&s=20)
 
 ### SVN - Centr
 
