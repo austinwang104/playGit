@@ -5,10 +5,10 @@
 2. tools    **`bash`, `gitlab`, `vscode`, `tortoise Git`, `SourceTree`**
 3. commit   **`worktree(untracked, changed, unmerged)`, `staged files`, `commit with amend`**
 4. commit-operator    **`reset`, `revert`, `cherry-pick`**
-4. branch   **`tracking(remote)`, `merge`, `rebase`, `pull`, `push`**
-5. Gitlab   **`issue tracking`, `branch by issue(?)`, `pull request`**
-6. addition **`gitignore`, `gitattribute`, `git-hook`**
-7. reference
+5. branch   **`tracking(remote)`, `merge`, `rebase`, `pull`, `push`**
+6. Gitlab   **`issue tracking`, `branch by issue(?)`, `pull request`**
+7. addition **`gitignore`, `gitattribute`, `git-hook`**
+8. reference
     * [連猴子都能懂得Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro2_4.html)
     * [ihower的Git教室](https://ihower.tw/git/index.html)
     * [git-document](https://git-scm.com/book/en/v2)
@@ -55,54 +55,35 @@
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/unstage-stage.png?raw=true)
 
-1. work-tree: untrack/change-files/staging-files
-    * add/remove staging-files
-2. add track file
-    * add/remove track
-    * 可能的情形是有個個人設定檔不應該納入git控管，卻又已經上傳了。
-    `sourceTree無法針對特定檔案進行管理，所以此功能僅能透過terminal進行`
-3. make commit
-4. manipulate commit: `revert`, `cherry-pink`
-    * feature/hotfix commit to wrong branch
+5. additional question:    **how to ignore file? `untracked`**
 
 
-# branch / remote
-1. push
-2. pull
-1. merge
-    * conflict 處理
-2. rebase
-    * rebase --continue
-3. merge **default**
-4. rebase **option**
+## commit-operator    
+1. `reset`
+2. `revert`
+3. `cherry-pick`
 
 
-# 特殊用法
-1. gitignore
-    * .idea/
-    * node_modules/
-2. gitattribute
-    * * -text
-3. git-hook
-    * pre-commit
+## branch   
+1. `tracking(remote)`
+2. `merge`
+3. `rebase`
+4. `pull`
+5. `push`
 
 
-#Issue Tracking **包含練習**
-* 建立問題單**修改方向/範圍討論**:SA, QA, PM, USER
-* 根據分支(環境)進行問題修改**保護分支(branch)**
-* 修改程式碼建立認可**commit**: PG
+## Gitlab   
+1. `issue tracking`
+2. `branch by issue(?)`
+3. `pull request`
 
-## 練習`SA`, `PG`
-1. 建立問題單**issue**
-2. 針對問題單進行程式碼修改
-3. 修改的程式碼放到對應的分支**branch**，然後進行程式碼審核**code review**，通過後併入，否則重新修訂。
 
-# future work
-1. ssh-keygen
-2. ci/cd
-3. aws/container
+## addition 
+1. `gitignore`
+2. `gitattribute`
+3. `git-hook`
 
-# reference
-* [連猴子都能懂得Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro2_4.html)
-* [ihower的Git教室](https://ihower.tw/git/index.html)
-* [git-document](https://git-scm.com/book/en/v2)
+
+## QA
+
+# Thanks for your time!
