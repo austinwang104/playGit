@@ -15,17 +15,18 @@
 
 ## using SVN
 
-* SVN 操作流程
+### SVN 操作流程
 ![](https://github.com/austinwang104/playGit/blob/dev/img/workflow-1.png?raw=true)
 [ref](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjG-u-ei_3iAhWEGqYKHX2_C6wQjhx6BAgBEAI&url=https%3A%2F%2Fens.lal.in2p3.fr%2FPresentations%2FSVN%2Fsvn.html&psig=AOvVaw1EayJnFb7JKn1O7n4LVqjZ&ust=1561292841059189)
 
-* SVN 
+### SVN - branch
     * 分支採用snapshot **運算成本大**
     * 比對程式耗時 **beyond compare** **人力成本高**
     * 應用情況
 
-    [![](https://github.com/austinwang104/playGit/blob/dev/img/SVN-Git-Dimensions.png?raw=true)]
+    <kbd>![](https://github.com/austinwang104/playGit/blob/dev/img/SVN-Git-Dimensions.png?raw=true)</kdb>
 
+### SVN - Centr
 
 # forword ...add for assume-unchanged
 * 先跟大家報告一下git對於我經歷過的一些事情，之前在專案上遇到了一些情況。這些情況非常棘手。那個時候的一個案子分了兩階段在進行。
@@ -41,7 +42,7 @@
 
 * `adding svn flow image`
 
-# 特點
+### Git特點
 1. 快照**snapshot**的方式記錄commit **切換快速**
     `adding picture`
 2. 分散**Decentralization**的方式管理branch **分散式架構，適合隔離環境**
