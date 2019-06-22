@@ -2,6 +2,6 @@
     "abc":"123",
     "ok":"200",
     "no-found":404,
-    "skip-worktree":"pull ok",
+    "skip-worktree":"pull ok2",
     "hello":"conflicts"
 }
