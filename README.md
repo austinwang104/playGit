@@ -40,7 +40,7 @@
 ### Git特點
 1. 快照**snapshot**的方式記錄commit **切換快速**
     
-    
+![](https://github.com/austinwang104/playGit/blob/dev/img/rYPpv.png?raw=true)
 
 2. 分散**Decentralization**的方式管理branch **分散式架構，適合隔離環境**
 
