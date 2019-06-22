@@ -23,12 +23,12 @@
 
 ### SVN - branch
 
-* 分支採用snapshot **運算成本大**
-* 比對程式耗時 **beyond compare** **人力成本高**
-* 應用情況
-
+> 分支採用snapshot **運算成本大**
+> 比對程式耗時 **beyond compare** **人力成本高**
+> 應用情況
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/SVN-Git-Dimensions.png | width=150x100)
+
 
 ### SVN - Centr
 
