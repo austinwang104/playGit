@@ -179,6 +179,22 @@ HEAD is now at 4c5830b bcup
 如果要保留work-tree 可以透過--sort來保留
 > `get reset --soft HEAD^`
 > `git status`
+```
+On branch dev
+Your branch is behind 'origin/dev' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+```
 
 
 
@@ -201,6 +217,7 @@ HEAD is now at 4c5830b bcup
 
 
 ## addition 
+### gitconfig
 ### gitignore
 ### gitattribute
 ### git-hook
