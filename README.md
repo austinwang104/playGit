@@ -48,12 +48,17 @@ nothing to commit, working tree clean
 >
 > `git remote -v`
 ```
-ext     https://github.com/austinwang104/playGit.git (fetch)
-ext     https://github.com/austinwang104/playGit.git (push)
-origin  git@hub104:austinwang104/playGit.git (fetch)
-origin  git@hub104:austinwang104/playGit.git (push)
+origin  https://github.com/austinwang104/playGit.git (fetch)
+origin  https://github.com/austinwang104/playGit.git (push)
 ```
+> `git status`
+```
+On branch master
 
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+```
 
 ## commit
 
