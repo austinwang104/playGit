@@ -92,29 +92,28 @@ nothing to commit, working tree clean
 ## commit
 
 ### worktree(untracked, changed, unmerged)
+新檔案產生之後，git機制會追蹤新產生的檔案路徑。
 
-1. 新檔案產生
+> `git status`
+```
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
 
-    > `git status`
-    ```
-    Untracked files:
-    (use "git add <file>..." to include in what will be committed)
+        util/encrp.js
+```
 
-            util/encrp.js
-    ```
+> `git add .` **要避免大量檔案的commit，除非initial**
+> 
+> `git status`
+```
+On branch dev
+Your branch is up to date with 'origin/dev'.
 
-    > `git add .` **要避免大量檔案的commit，除非initial**
-    > 
-    > `git status`
-    ```
-    On branch dev
-    Your branch is up to date with 'origin/dev'.
+Changes to be committed:
+(use "git reset HEAD <file>..." to unstage)
 
-    Changes to be committed:
-    (use "git reset HEAD <file>..." to unstage)
-
-            new file:   util/encrp.js
-    ```
+        new file:   util/encrp.js
+```
 
 * `staged files`
 * `commit amend before push`
@@ -130,6 +129,7 @@ git rm --cache <filename>   && git add . && git push
 ```
 
 * ****
+
 
 
 
