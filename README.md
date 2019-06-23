@@ -57,6 +57,11 @@ git clone <path>
 git status
 ```
 
+> On branch dev
+> Your branch is up to date with 'origin/dev'.
+> 
+> nothing to commit, working tree clean
+
 
 ## commit
 1. `worktree(untracked, changed, unmerged)`
