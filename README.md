@@ -198,9 +198,26 @@ Changes not staged for commit:
 
 ### revert
 把指定的commit做刪除之後再建立一個commit。
+> `git revert e1a9f6b`
+```
+[dev c622b94] Revert "wait to revert"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+> `git status`
+```
+On branch dev
+Your branch is ahead of 'origin/dev' by 1 commit.
+  (use "git push" to publish your local commits)
 
+nothing to commit, working tree clean
+```
 
 ### cherry-pick
+從挑選出一個commit，直接加到現在操作的branch當中。
+> `git cherry-pick`
+```
+testing...
+```
 
 
 ## branch   
