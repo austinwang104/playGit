@@ -54,7 +54,7 @@ nothing to commit, working tree clean
     ```
 
     > `git add .` **要避免大量檔案的commit，除非initial**
-    
+    > 
     > `git status`
     ```
     On branch dev
