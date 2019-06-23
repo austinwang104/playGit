@@ -42,7 +42,7 @@ nothing to commit, working tree clean
 
 ## commit
 
-### `worktree(untracked, changed, unmerged)`
+### worktree(untracked, changed, unmerged)
 
     1.新檔案產生
 
@@ -85,29 +85,29 @@ git rm --cache <filename>   && git add . && git push
 
 
 ## commit-operator    
-### `reset`
-### `revert`
-### `cherry-pick`
+### reset
+### revert
+### cherry-pick
 
 
 ## branch   
-### `tracking(remote)`
-### `merge`
-### `rebase`
-### `pull`
-### `push`
+### tracking(remote)
+### merge
+### rebase
+### pull
+### push
 
 
 ## Gitlab   
-### `issue tracking`
-### `branch by issue(?)`
-### `pull request`
+### issue tracking
+### branch by issue(?)
+### pull request
 
 
 ## addition 
-### `gitignore`
-### `gitattribute`
-### `git-hook`
+### gitignore
+### gitattribute
+### git-hook
 
 
 ## QA
