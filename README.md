@@ -21,7 +21,7 @@
     2. ssh : `git@github.com:austinwang104/playGit.git`
 
 ### git clone
-    從伺服器上直接取得git branch & track
+從伺服器上直接取得git branch & track
 
 > `git clone git@github.com:austinwang104/playGit.git aaa`
 ```
