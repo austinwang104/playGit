@@ -102,7 +102,7 @@ Untracked files:
         util/encrp.js
 ```
 
-> `git add .` **要避免大量檔案的commit，除非initial**
+> `git add .`
 > 
 > `git status`
 ```
