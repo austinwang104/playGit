@@ -47,6 +47,17 @@
 ![](https://github.com/austinwang104/playGit/blob/dev/img/Distributed-Version-Control-System-Workflow-What-Is-Git-Edureka.png?raw=true)
 
 
+## git init/clone
+1. [教材Git路徑](git@github.com:austinwang104/playGit.git)
+2. http :`https://github.com/austinwang104/playGit.git`
+3. ssh : `git@github.com:austinwang104/playGit.git`
+
+```
+git clone <path>
+git status
+```
+
+
 ## commit
 1. `worktree(untracked, changed, unmerged)`
 2. `staged files`
@@ -55,7 +66,15 @@
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/unstage-stage.png?raw=true)
 
-5. additional question:    **how to ignore file? `untracked`**
+5. additional question:    
+
+* 如何取消設定檔的版控 **untrack**
+```
+git rm --cache <filename>   && git add . && git push
+```
+
+* ****
+
 
 
 ## commit-operator    
