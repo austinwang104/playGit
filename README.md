@@ -134,7 +134,50 @@ git rm --cache <filename>   && git add . && git push
 
 
 ## commit-operator    
+
+### git log
+可以透過git commit的順序查詢log的內容 **通常會配合branch參考查詢**
+
+> `git log --all --decorate --oneline --graph`
+```
+* 4c5830b 19-06-23 13 austinwang104  (HEAD -> dev, origin/dev, origin/HEAD) bcup
+* 8397021 19-06-23 12 austinwang104  save temp
+* 3e77dad 19-06-23 11 austinwang104  add example to git init
+* 9067d72 19-06-23 11 austinwang104  test format
+* 8d797a5 19-06-23 11 austinwang104  test format
+* 00355b4 19-06-23 11 austinwang104  commit para style fix
+* 99cd938 19-06-23 11 austinwang104  add git init sample
+* f3b2f66 19-06-23 11 austinwang104  git add clone/init sample
+* bd372db 19-06-23 10 austinwang104  hoho
+* 007cfa6 19-06-23 10 austinwang104  hoho
+* af5285e 19-06-23 08 austinwang104  change format
+```
+
+### git reflog
+可以看到所有git操作的歷程
+> `git reflog`
+
+
 ### reset
+切換到不同的commit node
+
+> `git reset --hard HEAD`
+> `get reset --soft HEAD^`
+> `get reset --hard origin/dev`
+```
+4c5830b (HEAD -> dev, origin/dev, origin/HEAD) HEAD@{3}: reset: moving to origin/dev
+d9ddb24 HEAD@{4}: reset: moving to HEAD
+d9ddb24 HEAD@{5}: reset: moving to HEAD^^^
+49765c4 HEAD@{6}: reset: moving to HEAD^^^
+b48aeae HEAD@{7}: reset: moving to HEAD^^^
+b8369c9 HEAD@{8}: reset: moving to HEAD^^^^^^^^^^^
+363d1e8 HEAD@{9}: reset: moving to HEAD^^^^^^^^^^^
+53ee91c (tag: ver1) HEAD@{10}: reset: moving to HEAD^^^^^^^^^^^
+```
+* 如果要保留work-tree 可以透過--sort來保留
+
+
+
 ### revert
 ### cherry-pick
 
