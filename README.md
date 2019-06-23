@@ -216,8 +216,46 @@ nothing to commit, working tree clean
 從挑選出一個commit，直接加到現在操作的branch當中。
 > `git cherry-pick`
 ```
-testing...
+error: could not apply e1a9f6b... wait to revert
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
 ```
+> `git status`
+```
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+You are currently cherry-picking commit e1a9f6b.
+  (fix conflicts and run "git cherry-pick --continue")
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+> `git ls-files -sv | grep README`
+```
+M 100644 a70511105cc0b1bdc228cd793f2accdc0a17bcda 1     README.md
+M 100644 2e8bae6e7e744237acb33ab5cd41caa167ddf4de 2     README.md
+M 100644 85ab9da3b242f00099700a52b7097da585676414 3     README.md
+```
+> `git status`
+```
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+```
+> `git ls-files -sv | grep README`
+```
+H 100644 2e8bae6e7e744237acb33ab5cd41caa167ddf4de 0     README.md
+```
+
+
 
 
 ## branch   
