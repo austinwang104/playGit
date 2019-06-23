@@ -15,29 +15,32 @@
 
 
 ## git init/clone
-* [教材Git路徑](git@github.com:austinwang104/playGit.git)
+
+### [教材Git路徑](git@github.com:austinwang104/playGit.git)
     1. http :`https://github.com/austinwang104/playGit.git`
     2. ssh : `git@github.com:austinwang104/playGit.git`
 
-> git clone git@github.com:austinwang104/playGit.git
-```
-Cloning into 'aaa'...
-Enter passphrase for key '/home/austin/.ssh/id_rsa':
-remote: Enumerating objects: 139, done.
-remote: Counting objects: 100% (139/139), done.
-remote: Compressing objects: 100% (100/100), done.
-remote: Total 365 (delta 83), reused 90 (delta 39), pack-reused 226
-Receiving objects: 100% (365/365), 1.18 MiB | 608.00 KiB/s, done.
-Resolving deltas: 100% (189/189), done.
-```
+### git clone
 
-> git status
-```
-On branch dev
-Your branch is up to date with 'origin/dev'.
+    > `git clone git@github.com:austinwang104/playGit.git aaa`
+    ```
+    Cloning into 'aaa'...
+    Enter passphrase for key '/home/austin/.ssh/id_rsa':
+    remote: Enumerating objects: 139, done.
+    remote: Counting objects: 100% (139/139), done.
+    remote: Compressing objects: 100% (100/100), done.
+    remote: Total 365 (delta 83), reused 90 (delta 39), pack-reused 226
+    Receiving objects: 100% (365/365), 1.18 MiB | 608.00 KiB/s, done.
+    Resolving deltas: 100% (189/189), done.
+    ```
 
-nothing to commit, working tree clean
-```
+    > `git status`
+    ```
+    On branch dev
+    Your branch is up to date with 'origin/dev'.
+
+    nothing to commit, working tree clean
+    ```
 
 
 ## commit
