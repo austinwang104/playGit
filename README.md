@@ -13,39 +13,6 @@
     * [ihower的Git教室](https://ihower.tw/git/index.html)
     * [git-document](https://git-scm.com/book/en/v2)
 
-## using SVN
-
-### SVN 操作流程
-![](https://github.com/austinwang104/playGit/blob/dev/img/workflow-1.png?raw=true)
-[from](https://walty8.com/comparison-of-git-and-svn/)
-
-### SVN - branch
-
-* 分支採用snapshot **運算成本大**
-* 比對程式耗時 **beyond compare** **人力成本高**
-* 應用情況
-
-![](https://github.com/austinwang104/playGit/blob/dev/img/2019-06-22_225951.png?raw=true)
-
-### SVN - Centralized
-
-* 公司程式庫 / 客戶端程式庫 **封閉環境**
-* 離開SVN後無法作業 **無法加班**
-* 程式碼錯誤影響作業 **個別排除**
-* 應用情況
-
-![](https://github.com/austinwang104/playGit/blob/dev/img/Centralized-Version-Control-System-Workflow-What-Is-Git-Edureka.png?raw=true)
-
-
-### Git特點
-1. 快照**snapshot**的方式記錄commit **切換快速**
-    
-![](https://github.com/austinwang104/playGit/blob/dev/img/rYPpv.png?raw=true)
-
-2. 分散**Decentralization**的方式管理branch **分散式架構，適合隔離環境**
-
-![](https://github.com/austinwang104/playGit/blob/dev/img/Distributed-Version-Control-System-Workflow-What-Is-Git-Edureka.png?raw=true)
-
 
 ## git init/clone
 * [教材Git路徑](git@github.com:austinwang104/playGit.git)
@@ -64,9 +31,7 @@ Receiving objects: 100% (365/365), 1.18 MiB | 608.00 KiB/s, done.
 Resolving deltas: 100% (189/189), done.
 ```
 
-
 > git status
-
 ```
 On branch dev
 Your branch is up to date with 'origin/dev'.
@@ -76,10 +41,30 @@ nothing to commit, working tree clean
 
 
 ## commit
-1. `worktree(untracked, changed, unmerged)`
-2. `staged files`
-3. `commit amend before push`
-4. commit 結構圖與操作
+* `worktree(untracked, changed, unmerged)`
+
+    1.`新檔案產生`
+    ```
+    Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+
+            util/encrp.js
+    ```
+
+    > git add . **要避免大量檔案的commit，除非initial**
+    ```
+    On branch dev
+    Your branch is up to date with 'origin/dev'.
+
+    Changes to be committed:
+    (use "git reset HEAD <file>..." to unstage)
+
+            new file:   util/encrp.js
+    ```
+
+* `staged files`
+* `commit amend before push`
+* commit 結構圖與操作
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/unstage-stage.png?raw=true)
 
