@@ -156,14 +156,6 @@ git rm --cache <filename>   && git add . && git push
 ### git reflog
 可以看到所有git操作的歷程
 > `git reflog`
-
-
-### reset
-切換到不同的commit node
-
-> `git reset --hard HEAD`
-> `get reset --soft HEAD^`
-> `get reset --hard origin/dev`
 ```
 4c5830b (HEAD -> dev, origin/dev, origin/HEAD) HEAD@{3}: reset: moving to origin/dev
 d9ddb24 HEAD@{4}: reset: moving to HEAD
@@ -174,7 +166,19 @@ b8369c9 HEAD@{8}: reset: moving to HEAD^^^^^^^^^^^
 363d1e8 HEAD@{9}: reset: moving to HEAD^^^^^^^^^^^
 53ee91c (tag: ver1) HEAD@{10}: reset: moving to HEAD^^^^^^^^^^^
 ```
-* 如果要保留work-tree 可以透過--sort來保留
+
+### reset
+切換到不同的commit node
+
+> `git reset --hard HEAD`
+> `get reset --hard origin/dev`
+```
+HEAD is now at 4c5830b bcup
+```
+
+如果要保留work-tree 可以透過--sort來保留
+> `get reset --soft HEAD^`
+> `git status`
 
 
 
