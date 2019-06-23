@@ -195,14 +195,16 @@ Changes not staged for commit:
 
         modified:   README.md
 ```
-
-
 
 ### revert
+把指定的commit做刪除之後再建立一個commit。
+
+
 ### cherry-pick
 
 
 ## branch   
+### fetch
 ### tracking(remote)
 ### merge
 ### rebase
