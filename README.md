@@ -48,9 +48,9 @@
 
 
 ## git init/clone
-1. [教材Git路徑](git@github.com:austinwang104/playGit.git)
-2. http :`https://github.com/austinwang104/playGit.git`
-3. ssh : `git@github.com:austinwang104/playGit.git`
+* [教材Git路徑](git@github.com:austinwang104/playGit.git)
+    1. http :`https://github.com/austinwang104/playGit.git`
+    2. ssh : `git@github.com:austinwang104/playGit.git`
 
 > git clone git@github.com:austinwang104/playGit.git
 ```
