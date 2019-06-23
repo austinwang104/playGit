@@ -64,7 +64,7 @@ nothing to commit (create/copy files and use "git add" to track)
 
 ### worktree(untracked, changed, unmerged)
 
-    1.新檔案產生
+1. 新檔案產生
 
     > `git status`
     ```
