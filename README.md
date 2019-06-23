@@ -53,7 +53,6 @@
 3. ssh : `git@github.com:austinwang104/playGit.git`
 
 > git clone <path>
-> 
 > git status
 
 ```
