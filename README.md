@@ -197,7 +197,7 @@ Changes not staged for commit:
 ```
 
 ### revert
-把指定的commit做刪除之後再建立一個commit。
+把指定的commit做刪除之後再建立一個commit。........
 
 
 ### cherry-pick
