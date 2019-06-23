@@ -52,17 +52,16 @@
 2. http :`https://github.com/austinwang104/playGit.git`
 3. ssh : `git@github.com:austinwang104/playGit.git`
 
-```
-git clone <path>
-git status
-```
+> git clone <path>
+> 
+> git status
 
-> On branch dev
-> 
-> Your branch is up to date with 'origin/dev'.
-> 
-> 
-> nothing to commit, working tree clean
+```
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+```
 
 
 ## commit
