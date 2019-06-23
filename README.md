@@ -256,15 +256,28 @@ H 100644 2e8bae6e7e744237acb33ab5cd41caa167ddf4de 0     README.md
 ```
 
 
-
-
 ## branch   
 ### fetch
+取回server上的branch結構，才能知道server上限在分支上的變動，才能針對新的分支結構進行操作。
+> `git fetch -a`
+
 ### tracking(remote)
+> `git branch -u origin/dev`
+```
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+```
+
 ### merge
+> `git merge <branch>`
 ### rebase
+> `git rebase <branch>`
 ### pull
+> `git pull`
+> `git pull -u origin dev`
 ### push
+> `git push`
+> `git push -u origin dev`
+> `git push -u origin dev:dev`
 
 
 ## Gitlab   
