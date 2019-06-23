@@ -43,7 +43,9 @@ nothing to commit, working tree clean
 ## commit
 * `worktree(untracked, changed, unmerged)`
 
-    1.`新檔案產生`
+    1.新檔案產生
+
+    > `git status`
     ```
     Untracked files:
     (use "git add <file>..." to include in what will be committed)
@@ -51,7 +53,8 @@ nothing to commit, working tree clean
             util/encrp.js
     ```
 
-    > git add . **要避免大量檔案的commit，除非initial**
+    > `git add .` **要避免大量檔案的commit，除非initial**
+    > `git status`
     ```
     On branch dev
     Your branch is up to date with 'origin/dev'.
