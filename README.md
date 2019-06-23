@@ -44,6 +44,7 @@ nothing to commit, working tree clean
 ```
 
 ### git init
+從本地端建立git結構後與server建立連線，並從新checkout -t 取得branch資料。
 
 > `git remote add origin https://github.com/austinwang104/playGit.git`
 >
@@ -59,6 +60,33 @@ On branch master
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
+```
+> `git fetch -a`
+```
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 412 (delta 8), reused 12 (delta 4), pack-reused 396
+Receiving objects: 100% (412/412), 1.19 MiB | 514.00 KiB/s, done.
+Resolving deltas: 100% (220/220), done.
+From hub104:austinwang104/playGit
+ * [new branch]      dev        -> origin/dev
+ * [new branch]      master     -> origin/master
+ * [new branch]      prod       -> origin/prod
+ * [new branch]      staging    -> origin/staging
+ * [new tag]         ver1       -> ver1
+```
+> `git checkout -t origin dev`
+```
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+Switched to a new branch 'dev'
+```
+> `git status`
+```
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
 ```
 
 ## commit
