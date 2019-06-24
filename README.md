@@ -127,10 +127,22 @@ Changes to be committed:
 ```
 git rm --cache <filename>   && git add . && git push
 ```
+    上述的做法是連同設定檔都會被排除git控管之外**消失在伺服器repository當中**
 
-* ****
-
-
+* 如果只是想排除控管的話，可以透過`--assume-unchanged`, `skip-worktree`來達成
+```
+git update-index --assume-unchanged <file>
+git update-index --skip-worktree <file>
+```
+**但是在Server的repository如果有更新的時候，會出現因衝突無法下載的情況，則需要列舉**
+```
+git ls-files -sv | grep ^H -v
+```
+**找到真正受影響的檔案之後，再反向操作即可**
+```
+git update-index --no-assume-changed
+git update-index --no-skip-worktree
+```
 
 
 ## commit-operator    
