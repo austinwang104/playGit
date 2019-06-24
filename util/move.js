@@ -11,6 +11,10 @@ function run(){
 	// HH
 	// II
 }
+function walk(){
+	//new feature C ...
+}
+function run(){}
 function race(){}
 function car(){
 	//add new Feature A

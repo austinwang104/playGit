@@ -1,67 +1,298 @@
-# playGit
+# Git 分享 2019/06/27
+
+## schedule
+1. svn -> git   **`snapshot`, `Decentralization`**
+2. tools    **`bash`, `gitlab`, `vscode`, `tortoise Git`, `SourceTree`**
+3. commit   **`worktree(untracked, changed, unmerged)`, `staged files`, `commit with amend`**
+4. commit-operator    **`reset`, `revert`, `cherry-pick`**
+5. branch   **`tracking(remote)`, `merge`, `rebase`, `pull`, `push`**
+6. Gitlab   **`issue tracking`, `branch by issue(?)`, `pull request`**
+7. addition **`gitignore`, `gitattribute`, `git-hook`**
+8. reference
+    * [連猴子都能懂得Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro2_4.html)
+    * [ihower的Git教室](https://ihower.tw/git/index.html)
+    * [git-document](https://git-scm.com/book/en/v2)
+
+
+## git init/clone
+
+### [教材Git路徑](git@github.com:austinwang104/playGit.git)
+    1. http :`https://github.com/austinwang104/playGit.git`
+    2. ssh : `git@github.com:austinwang104/playGit.git`
+
+### git clone
+從伺服器上直接取得git branch & track
+
+> `git clone git@github.com:austinwang104/playGit.git aaa`
+```
+Cloning into 'aaa'...
+Enter passphrase for key '/home/austin/.ssh/id_rsa':
+remote: Enumerating objects: 139, done.
+remote: Counting objects: 100% (139/139), done.
+remote: Compressing objects: 100% (100/100), done.
+remote: Total 365 (delta 83), reused 90 (delta 39), pack-reused 226
+Receiving objects: 100% (365/365), 1.18 MiB | 608.00 KiB/s, done.
+Resolving deltas: 100% (189/189), done.
+```
+
+> `git status`
+```
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+```
+
+### git init
+從本地端建立git結構後與server建立連線，並從新checkout -t 取得branch資料。
+
+> `git remote add origin https://github.com/austinwang104/playGit.git`
+>
+> `git remote -v`
+```
+origin  https://github.com/austinwang104/playGit.git (fetch)
+origin  https://github.com/austinwang104/playGit.git (push)
+```
+> `git status`
+```
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+```
+> `git fetch -a`
+```
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 412 (delta 8), reused 12 (delta 4), pack-reused 396
+Receiving objects: 100% (412/412), 1.19 MiB | 514.00 KiB/s, done.
+Resolving deltas: 100% (220/220), done.
+From hub104:austinwang104/playGit
+ * [new branch]      dev        -> origin/dev
+ * [new branch]      master     -> origin/master
+ * [new branch]      prod       -> origin/prod
+ * [new branch]      staging    -> origin/staging
+ * [new tag]         ver1       -> ver1
+```
+> `git checkout -t origin dev`
+```
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+Switched to a new branch 'dev'
+```
+> `git status`
+```
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+```
+
+## commit
+
+### worktree(untracked, changed, unmerged)
+新檔案產生之後，git機制會追蹤新產生的檔案路徑。
+
+> `git status`
+```
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+
+        util/encrp.js
+```
+
+> `git add .`
+> 
+> `git status`
+```
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+(use "git reset HEAD <file>..." to unstage)
+
+        new file:   util/encrp.js
+```
+
+* `staged files`
+* `commit amend before push`
+* commit 結構圖與操作
+
+![](https://github.com/austinwang104/playGit/blob/dev/img/unstage-stage.png?raw=true)
+
+5. additional question:    
+
+* 如何取消設定檔的版控 **untrack**
+```
+git rm --cache <filename>   && git add . && git push
+```
+
+* ****
 
 
 
-# forword
-* 先跟大家報告一下git對於我經歷過的一些事情，之前在專案上遇到了一些情況。這些情況非常棘手。那個時候的一個案子分了兩階段在進行。
-1. 第一階段deliver之後，產生了一個production的版本
-2. 第二階段同時在開發，產生了一個所謂的developer的版本
-3. production出現了錯誤需要立即的修復，產生了一個hotfix的版本。
 
-* 那個時候所使用的工具是svn，那個時候大家對svn所使用到的功能大概也只用到了儲存的功能(集中管理)，對於程式碼版本的控管大概也就是一條線。
-* 切分支的概念大概也就是多一個資料夾，當中的程式比對就請出了神一般的工具**beyond compare 3**
-* PG們遇到的情況：
-1. 核心的開發工作在`develop`的版本，`develop`會有很多新開發的功能`feature`,但是開發到一半就會被PM或使用者叫去問`production`的一個bug。然後PG們就會被中斷`developer`的開發，立刻要去修復`production`的問題產生了N個`hotfix`的內容。以SVN切Branch的狀況來說，基本上程式碼都放在不同的位置，因此這個hotfix得要透過人工的方式搬移**compoare**。
-2. PG遇到兩個難題，`production`的`hotfix`要進入到`develop`，`develop`的`feature`不要進到`production`，另外一個就是要快速的切換`production`, `develop`的開發。PG每天的時間大約有50%的時間在做這些切換和`feature`&`hotfix`的搬移。
+## commit-operator    
+
+### git log
+可以透過git commit的順序查詢log的內容 **通常會配合branch參考查詢**
+
+> `git log --all --decorate --oneline --graph`
+```
+* 4c5830b 19-06-23 13 austinwang104  (HEAD -> dev, origin/dev, origin/HEAD) bcup
+* 8397021 19-06-23 12 austinwang104  save temp
+* 3e77dad 19-06-23 11 austinwang104  add example to git init
+* 9067d72 19-06-23 11 austinwang104  test format
+* 8d797a5 19-06-23 11 austinwang104  test format
+* 00355b4 19-06-23 11 austinwang104  commit para style fix
+* 99cd938 19-06-23 11 austinwang104  add git init sample
+* f3b2f66 19-06-23 11 austinwang104  git add clone/init sample
+* bd372db 19-06-23 10 austinwang104  hoho
+* 007cfa6 19-06-23 10 austinwang104  hoho
+* af5285e 19-06-23 08 austinwang104  change format
+```
+
+### git reflog
+可以看到所有git操作的歷程
+> `git reflog`
+```
+4c5830b (HEAD -> dev, origin/dev, origin/HEAD) HEAD@{3}: reset: moving to origin/dev
+d9ddb24 HEAD@{4}: reset: moving to HEAD
+d9ddb24 HEAD@{5}: reset: moving to HEAD^^^
+49765c4 HEAD@{6}: reset: moving to HEAD^^^
+b48aeae HEAD@{7}: reset: moving to HEAD^^^
+b8369c9 HEAD@{8}: reset: moving to HEAD^^^^^^^^^^^
+363d1e8 HEAD@{9}: reset: moving to HEAD^^^^^^^^^^^
+53ee91c (tag: ver1) HEAD@{10}: reset: moving to HEAD^^^^^^^^^^^
+```
+
+### reset
+切換到不同的commit node
+
+> `git reset --hard HEAD`
+> `get reset --hard origin/dev`
+```
+HEAD is now at 4c5830b bcup
+```
+
+如果要保留work-tree 可以透過--sort來保留
+> `get reset --soft HEAD^`
+> `git status`
+```
+On branch dev
+Your branch is behind 'origin/dev' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+```
+
+### revert
+把指定的commit做刪除之後再建立一個commit。
+> `git revert e1a9f6b`
+```
+[dev c622b94] Revert "wait to revert"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+> `git status`
+```
+On branch dev
+Your branch is ahead of 'origin/dev' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+
+### cherry-pick
+從挑選出一個commit，直接加到現在操作的branch當中。
+> `git cherry-pick`
+```
+error: could not apply e1a9f6b... wait to revert
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+```
+> `git status`
+```
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+You are currently cherry-picking commit e1a9f6b.
+  (fix conflicts and run "git cherry-pick --continue")
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+> `git ls-files -sv | grep README`
+```
+M 100644 a70511105cc0b1bdc228cd793f2accdc0a17bcda 1     README.md
+M 100644 2e8bae6e7e744237acb33ab5cd41caa167ddf4de 2     README.md
+M 100644 85ab9da3b242f00099700a52b7097da585676414 3     README.md
+```
+> `git status`
+```
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+```
+> `git ls-files -sv | grep README`
+```
+H 100644 2e8bae6e7e744237acb33ab5cd41caa167ddf4de 0     README.md
+```
 
 
-# 特點
-1. 差異的方式記錄commit **切換快速**
-2. 分散的方式管理branch **隔離環境**
+## branch   
+### fetch
+取回server上的branch結構，才能知道server上限在分支上的變動，才能針對新的分支結構進行操作。
+> `git fetch -a`
 
-# commit
-1. work-tree: untrack/change-files/staging-files
-    * add/remove staging-files
-2. add track file
-    * add/remove track
-3. make commit
-4. manipulate commit: `revert`, `cherry-pink`
-    * feature/hotfix commit to wrong branch
+### tracking(remote)
+> `git branch -u origin/dev`
+```
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+```
 
-# branch
-1. merge
-    * conflict 處理
-2. rebase
-    * rebase --continue
-3. pull/push **merge** or **rebase**
-
-
-# 特殊用法
-1. gitignore
-    * .idea/
-    * node_modules/
-2. gitattribute
-    * * -text
-3. git-hook
-    * pre-commit
+### merge
+> `git merge <branch>`
+### rebase
+> `git rebase <branch>`
+### pull
+> `git pull`
+> `git pull -u origin dev`
+### push
+> `git push`
+> `git push -u origin dev`
+> `git push -u origin dev:dev`
 
 
-#Issue Tracking **包含練習**
-* 建立問題單**修改方向/範圍討論**:SA, QA, PM, USER
-* 根據分支(環境)進行問題修改**保護分支(branch)**
-* 修改程式碼建立認可**commit**: PG
+## Gitlab   
+### issue tracking
+### branch by issue(?)
+### pull request
 
-## 練習
-1. 建立問題單**issue**
-2. 針對問題單進行程式碼修改
-3. 修改的程式碼放到對應的分支**branch**，然後進行程式碼審核**code review**，通過後併入，否則重新修訂。
 
-# future work
-1. ssh-keygen
-2. ci/cd
-3. aws/container
+## addition 
+### gitconfig
+### gitignore
+### gitattribute
+### git-hook
 
-# reference
-* [連猴子都能懂得Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro2_4.html)
-* [ihower的Git教室](https://ihower.tw/git/index.html)
-* [git-document](https://git-scm.com/book/en/v2)
+
+## QA
+
+# Thanks for your time!
