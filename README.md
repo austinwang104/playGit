@@ -332,16 +332,33 @@ Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 * merge運作得很好，為什麼需要rebase?
 ![](https://github.com/austinwang104/playGit/blob/dev/img/merge_commits.png?raw=true)
 
-* 如果上面的圖感覺還蠻好看的話，可以在看這張
+* 如果上面的圖感覺還蠻好看的話，可以參考這張
 ![](https://github.com/austinwang104/playGit/blob/dev/img/1_6jovdG5QkLEPNEj3ScbM2g.png?raw=true)
+
+* rebase 運作概念圖
+![](https://github.com/austinwang104/playGit/blob/dev/img/git-rebase.png?raw=true)
 
 ### pull
 > `git pull`
 > `git pull -u origin dev`
+
+* pull 其實是一種merge **預設動作**
+* 可以透過rebase的方式進行pull
+> `git pull --rebase`   **可以避免無謂的merge，但是有機會遇到大量的衝突`conflicts`**
+
+* rebase or not
+![](https://github.com/austinwang104/playGit/blob/dev/img/mergerebase.png?raw=true)
+
 ### push
+* 針對track的branch進行分支推送
 > `git push`
+* branch如果沒有預設的track branch，可以指定或修改 track的branch
 > `git push -u origin dev`
+* 可以修改本地端對應遠端的branch **可以設定為不同名稱的branch，但是習慣會使用相同的branch命名。另外在新版的git有提供config進行branch對應的預設`simple`**
 > `git push -u origin dev:dev`
+
+* 另外可以強制修正server的branch  **此動作可以完全改掉server上的branch內容，通常在git管理介面上會加上保護`protect`**
+> `git push -f`
 
 
 ## Gitlab   
