@@ -368,17 +368,33 @@ Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 > `git push -f`
 
 
-## Gitlab   
-### issue tracking
-### branch by issue(?)
-### pull request
+## Gitlab    
+
+* issue tracking
+* branch by issue(?)
+* pull request **code review**
 
 
 ## addition 
-### gitconfig
-### gitignore
-### gitattribute
-### git-hook
+* gitconfig   **alias**
+```
+[alias]
+    spull = !git stash save -u "spull" && git fetch && git pull --rebase -X=theirs && git stash pop && git stash list && git status
+    adog = !git log --all --decorate --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an %Cgreen%d %Creset%s' --graph --date=short
+```
+* gitignore   **ignore setting files**
+```
+~$*
+node_modules/
+```
+* gitattribute  **-text**
+```
+* -text
+```
+* git-hook  **pre-commit**
+```
+ehco hello-world
+```
 
 
 ## QA
