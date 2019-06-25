@@ -256,7 +256,7 @@ Changes not staged for commit:
 
 ### revert
 把指定的commit做刪除之後再建立一個commit。
-![](https://github.com/austinwang104/playGit/blob/dev/img/git-revert-vs-reset.svg?raw=true)
+![](https://github.com/austinwang104/playGit/blob/dev/img/git-revert.png?raw=true)
 > `git revert e1a9f6b`
 ```
 [dev c622b94] Revert "wait to revert"
