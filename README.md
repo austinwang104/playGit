@@ -50,9 +50,12 @@
 
 ## git init/clone
 
-### [教材Git路徑](git@github.com:austinwang104/playGit.git)
+### [練習的Git路徑](git@github.com:austinwang104/playGit.git)
     1. http :`https://github.com/austinwang104/playGit.git`
     2. ssh : `git@github.com:austinwang104/playGit.git`
+* 隨後會移入**ehrms2_SA/3.7.技術分享紀錄/**
+
+* TOOL: 建議以`bash`為主，另外課程當中會介紹`VSCODE`, `TORTOISE GIT`, ~~`SOURCETREE`~~ 的使用方式
 
 ### git clone
 從伺服器上直接取得git branch & track
@@ -125,7 +128,7 @@ nothing to commit, working tree clean
 
 ## commit
 
-* commit 示意圖
+* commit 檔案區塊與功能對應
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/unstage-stage.png?raw=true)
 
