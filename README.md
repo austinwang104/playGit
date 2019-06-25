@@ -125,6 +125,10 @@ nothing to commit, working tree clean
 
 ## commit
 
+* commit 示意圖
+
+![](https://github.com/austinwang104/playGit/blob/dev/img/unstage-stage.png?raw=true)
+
 ### worktree(untracked, changed, unmerged)
 新檔案產生之後，git機制會追蹤新產生的檔案路徑。
 
@@ -151,13 +155,15 @@ Changes to be committed:
 
 * `staged files`
 * `commit amend before push`
-* commit 結構圖與操作
+> `git commit --amend`
+```
+git會開啟預設的editor
+自由編輯後可以進行存檔
+存檔後，commit內容即更新
+```
 
-![](https://github.com/austinwang104/playGit/blob/dev/img/unstage-stage.png?raw=true)
 
-5. additional question:    
-
-* 如何取消設定檔的版控 **untrack**
+### 情境：如何取消設定檔的版控 **untrack**
 ```
 git rm --cache <filename>   && git add . && git push
 ```
