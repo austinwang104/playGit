@@ -55,7 +55,9 @@
     2. ssh : `git@github.com:austinwang104/playGit.git`
 * 隨後會移入**ehrms2_SA/3.7.技術分享紀錄/**
 
-* TOOL: 建議以`bash`為主，另外課程當中會介紹`VSCODE`, `TORTOISE GIT`, ~~`SOURCETREE`~~ 的使用方式
+* **TOOL**: 建議以`bash`為主，另外課程當中會介紹`VSCODE`, `TORTOISE GIT`, ~~`SOURCETREE`~~ 的使用方式
+
+* 如果使用`bash`的話，應該會想要採用透過ssh的方式認證。**因為如果透過https認證的話，每次認證需要輸入帳密。`正常的心理反應是會很惱人`**
 
 ### git clone
 從伺服器上直接取得git branch & track
@@ -192,7 +194,7 @@ git update-index --no-skip-worktree
 
 ### git log
 
-可以透過`git commit`的順序查詢log的內容**通常會配合branch參考查詢**
+可以透過`git commit`的順序查詢log的內容**通常會配合branch參考查詢**
 
 > `git log --all --decorate --oneline --graph`
 ```
@@ -326,6 +328,13 @@ Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 > `git merge <branch>`
 ### rebase
 > `git rebase <branch>`
+
+* merge運作得很好，為什麼需要rebase?
+![](https://github.com/austinwang104/playGit/blob/dev/img/merge_commits.png?raw=true)
+
+* 如果上面的圖感覺還蠻好看的話，可以在看這張
+![](https://github.com/austinwang104/playGit/blob/dev/img/1_6jovdG5QkLEPNEj3ScbM2g.png?raw=true)
+
 ### pull
 > `git pull`
 > `git pull -u origin dev`
