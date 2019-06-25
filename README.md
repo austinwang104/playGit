@@ -188,7 +188,8 @@ git update-index --no-skip-worktree
 ## commit-operator    
 
 ### git log
-可以透過git commit的順序查詢log的內容 **通常會配合branch參考查詢**
+
+可以透過`git commit`的順序查詢log的內容**通常會配合branch參考查詢**
 
 > `git log --all --decorate --oneline --graph`
 ```
@@ -206,7 +207,7 @@ git update-index --no-skip-worktree
 ```
 
 ### git reflog
-可以看到所有git操作的歷程
+可以看到所有`git操作歷程`
 > `git reflog`
 ```
 4c5830b (HEAD -> dev, origin/dev, origin/HEAD) HEAD@{3}: reset: moving to origin/dev
@@ -220,9 +221,8 @@ b8369c9 HEAD@{8}: reset: moving to HEAD^^^^^^^^^^^
 ```
 
 ### reset
-切換到不同的commit node
-
-> `git reset --hard HEAD`
+切換到不同的`commit node`
+> `git reset --hard HEAD`
 > `get reset --hard origin/dev`
 ```
 HEAD is now at 4c5830b bcup
