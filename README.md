@@ -344,7 +344,7 @@ H 100644 2e8bae6e7e744237acb33ab5cd41caa167ddf4de 0     README.md
 
 ## branch   
 ![](https://github.com/austinwang104/playGit/blob/dev/img/Branch-2.png?raw=true)
-### fetch
+### fetch => **git pull = git fetch + git merge**
 
 取回server上的branch結構，才能知道server上限在分支上的變動，才能針對新的分支結構進行操作。
 
