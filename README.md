@@ -134,6 +134,10 @@ nothing to commit, working tree clean
 
 ## commit
 
+* commit 結構
+
+![](https://github.com/austinwang104/playGit/blob/dev/img/18333fig0301-tn.png?raw=true)
+
 * commit 檔案區塊與功能對應
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/unstage-stage.png?raw=true)
@@ -440,8 +444,6 @@ ehco hello-world
 ```
 174
 ```
-
-
 
 ## QA
 
