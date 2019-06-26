@@ -409,6 +409,7 @@ matching-->(略)push all matching branches. All branches having the same name in
 
 ### pull
 > `git pull`
+> 
 > `git pull -u origin dev`
 
 * pull 其實是一種merge **預設動作**
