@@ -230,6 +230,11 @@ git update-index --no-skip-worktree
 * af5285e 19-06-23 08 austinwang104  change format
 ```
 
+> `git log --all --name-only --pretty=format: | sort -u | grep staging`
+```
+
+```
+
 ### git reflog
 可以看到所有`git操作歷程`
 > `git reflog`
@@ -425,11 +430,13 @@ matching-->(略)push all matching branches. All branches having the same name in
 > `git push -f`
 
 
-## Gitlab    
+## Github
 
 * issue tracking
 * branch by issue(?)
 * pull request **code review**
+
+> `BitBucket`, `gitlab`, ``
 
 
 ## addition 
@@ -440,6 +447,7 @@ matching-->(略)push all matching branches. All branches having the same name in
     adog = !git log --all --decorate --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an %Cgreen%d %Creset%s' --graph --date=short
     tpull = !git stash save -u "tmp" && git fetch && git pull --rebase -X=theirs && git stash pop && git stash list && git status
     spush = !sh -c 'git add . && git commit -m \"${1-update}\" && git push' -
+    sfile = !sh -c 'git log --all --name-only --pretty=format: | sort -u | grep ${1}' -
 ```
 * gitignore   **ignore setting files**
 ```
