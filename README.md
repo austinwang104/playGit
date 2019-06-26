@@ -185,18 +185,18 @@ git會開啟預設的editor
 ```
 git rm --cache <filename>   && git add . && git push
 ```
-    上述的做法是連同設定檔都會被排除git控管之外**消失在伺服器repository當中**
+> 結果：上述的做法是連同設定檔都會被排除git控管之外**消失在伺服器repository當中**
 
-* 如果只是想排除控管的話，可以透過`--assume-unchanged`, `skip-worktree`來達成
+**如果只是想排除控管的話，可以透過`--assume-unchanged`, `skip-worktree`來達成**
 ```
 git update-index --assume-unchanged <file>
 git update-index --skip-worktree <file>
 ```
-**但是在Server的repository如果有更新的時候，會出現因衝突無法下載的情況，則需要列舉**
+> 注意：但是在Server的repository如果有更新的時候，會出現因衝突無法下載的情況，則需要列舉**
 ```
 git ls-files -sv | grep ^H -v
 ```
-**找到真正受影響的檔案之後，再反向操作即可**
+> 注意：找到真正受影響的檔案之後，再反向操作即可    **tortoiseGit -> **
 ```
 git update-index --no-assume-changed
 git update-index --no-skip-worktree
@@ -413,6 +413,8 @@ Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 [alias]
     spull = !git stash save -u "spull" && git fetch && git pull --rebase -X=theirs && git stash pop && git stash list && git status
     adog = !git log --all --decorate --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an %Cgreen%d %Creset%s' --graph --date=short
+    tpull = !git stash save -u "tmp" && git fetch && git pull --rebase -X=theirs && git stash pop && git stash list && git status
+    spush = !sh -c 'git add . && git commit -m \"${1-update}\" && git push' -
 ```
 * gitignore   **ignore setting files**
 ```
