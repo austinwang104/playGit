@@ -360,6 +360,15 @@ From hub104:austinwang104/playGit
 ```
 Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 ```
+> `git config --global push.default`
+```
+simple-->used to be the default (Git2.0)分支名稱要一模一樣
+upstream-->push the current branch to its upstream branch. (--set-upstream-to/-u)
+nothing-->(略)do not push anything.
+current-->(略)push the current branch to a branch of the same name.
+tracking-->(略)deprecated synonym for upstream.
+matching-->(略)push all matching branches. All branches having the same name in both ends are considered to be matching. This is the default.
+```
 
 ### merge
 > `git merge <branch>`
