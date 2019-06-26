@@ -56,7 +56,9 @@
     2. ssh : `git@github.com:austinwang104/playGit.git`
 * 隨後會移入**ehrms2_SA/3.7.技術分享紀錄/**
 
-* **TOOL**: 建議以`bash`為主，另外課程當中會介紹`VSCODE`, `TORTOISE GIT`, ~~`SOURCETREE`~~ 的使用方式
+* **TOOL**: 建議以`bash`為主，另外課程當中會介紹`vsCode`, `TORTOISE GIT`, ~~`SOURCETREE`~~, ~~`webstorm`~~ 的使用方式
+
+![](https://github.com/austinwang104/playGit/blob/dev/img/cheetsheet.png?raw=true)
 
 * 如果使用`bash`的話，應該會想要採用透過ssh的方式認證。**因為如果透過https認證的話，每次認證需要輸入帳密。`正常的心理反應是會很惱人`**
 
