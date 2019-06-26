@@ -416,6 +416,7 @@ matching-->(略)push all matching branches. All branches having the same name in
 > `git pull --rebase`   **可以避免無謂的merge，但是有機會遇到大量的衝突`conflicts`**
 
 * rebase or not
+
 ![](https://github.com/austinwang104/playGit/blob/dev/img/mergerebase.png?raw=true)
 
 ### push
