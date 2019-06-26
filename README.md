@@ -241,6 +241,8 @@ b8369c9 HEAD@{8}: reset: moving to HEAD^^^^^^^^^^^
 ### reset
 切換到不同的`commit node`
 
+* 可自行排除錯誤的`commit`
+
 ![](https://github.com/austinwang104/playGit/blob/dev/img/capture_stepup6_3_1.png?raw=true)
 
 > `git reset --hard HEAD`
