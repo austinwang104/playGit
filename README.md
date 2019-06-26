@@ -176,6 +176,10 @@ Changes to be committed:
 可以透過指定的branch/commit 取回檔案
 ```
 #### `commit amend before push`
+> `git commit -m 'commitMessage'`
+
+* push 之前 可以做的事情
+
 > `git commit --amend`
 ```
 git會開啟預設的editor
