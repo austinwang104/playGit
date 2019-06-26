@@ -184,7 +184,7 @@ git會開啟預設的editor
 ```
 905ba45
 ```
-> `git rev-list --count dev`
+> `git rev-list --count --all dev`
 ```
 174
 ```
