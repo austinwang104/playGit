@@ -337,8 +337,15 @@ H 100644 2e8bae6e7e744237acb33ab5cd41caa167ddf4de 0     README.md
 ## branch   
 ![](https://github.com/austinwang104/playGit/blob/dev/img/Branch-2.png?raw=true)
 ### fetch
+
 取回server上的branch結構，才能知道server上限在分支上的變動，才能針對新的分支結構進行操作。
+
 > `git fetch -a`
+```
+~~error: cannot lock ref 'refs/remotes/origin/dev': ref refs/remotes/origin/dev is at 5d30e169ec3896b037dad388245963e53516c688 but expected 8792dae416d151ef3dc40d0ec63a134c1aaaaeb5~~
+From hub104:austinwang104/playGit
+ ! 8792dae..5d30e16  dev        -> origin/dev  (unable to update local ref)
+```
 
 ### tracking(remote)
 > `git branch -u origin/dev`
