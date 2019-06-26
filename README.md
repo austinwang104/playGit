@@ -12,6 +12,7 @@
     * [連猴子都能懂得Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro2_4.html)
     * [ihower的Git教室](https://ihower.tw/git/index.html)
     * [git-document](https://git-scm.com/book/en/v2)
+    * [ATLASSIAN](https://www.atlassian.com/cs/git/tutorials/learn-git-with-bitbucket-cloud)
 
 
 ## using SVN
@@ -22,28 +23,28 @@
 
 ### SVN - branch
 
-* 分支採用snapshot **運算成本大**
-* 比對程式耗時 **beyond compare** **人力成本高**
-* 應用情況
-
 ![](https://github.com/austinwang104/playGit/blob/dev/img/2019-06-22_225951.png?raw=true)
 
+* 分支採用snapshot **運算成本大**
+* 比對程式耗時 **beyond compare** **人力成本高**
+
 ### SVN - Centralized
+
+![](https://github.com/austinwang104/playGit/blob/dev/img/Centralized-Version-Control-System-Workflow-What-Is-Git-Edureka.png?raw=true)
 
 * 公司程式庫 / 客戶端程式庫 **封閉環境**
 * 離開SVN後無法作業 **無法加班**
 * 程式碼錯誤影響作業 **個別排除**
-* 應用情況
 
-![](https://github.com/austinwang104/playGit/blob/dev/img/Centralized-Version-Control-System-Workflow-What-Is-Git-Edureka.png?raw=true)
 
 
 ### Git特點
-1. 快照**snapshot**的方式記錄commit **切換快速**
+
+#### 快照**snapshot**的方式記錄commit **切換快速**
     
 ![](https://github.com/austinwang104/playGit/blob/dev/img/rYPpv.png?raw=true)
 
-2. 分散**Decentralization**的方式管理branch **分散式架構，適合隔離環境**
+#### 分散**Decentralization**的方式管理branch **分散式架構，適合隔離環境**
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/Distributed-Version-Control-System-Workflow-What-Is-Git-Edureka.png?raw=true)
 
