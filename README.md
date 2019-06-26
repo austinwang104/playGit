@@ -392,10 +392,10 @@ matching-->(略)push all matching branches. All branches having the same name in
 > `git checkout experiment`
 >
 > `git rebase master` 
-> 
-> First, rewinding head to replay your work on top of it...
-> 
-> Applying: added staged command
+```
+First, rewinding head to replay your work on top of it...
+Applying: added staged command
+```
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/rebase-branch-18333fig0329-tn.png?raw=true)
 
