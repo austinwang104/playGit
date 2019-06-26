@@ -161,8 +161,16 @@ Changes to be committed:
         new file:   util/encrp.js
 ```
 
-* `staged files`
-* `commit amend before push`
+#### `staged files`
+> `git reset -- <files>`
+```
+透過reset可以把指定的檔案給設定為HEAD
+```
+> `git reset origin/master -- <files>`
+```
+可以透過指定的branch/commit 取回檔案
+```
+#### `commit amend before push`
 > `git commit --amend`
 ```
 git會開啟預設的editor
@@ -337,6 +345,14 @@ Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/Branch-1.png?raw=true)
 ### rebase
+
+> `git checkout experiment`
+> `git rebase master` 
+> First, rewinding head to replay your work on top of it...
+> Applying: added staged command
+
+![](https://github.com/austinwang104/playGit/blob/dev/img/rebase-branch-18333fig0329-tn.png?raw=true)
+
 > `git rebase <branch>`
 
 * merge運作得很好，為什麼需要rebase?
