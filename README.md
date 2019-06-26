@@ -421,9 +421,11 @@ Branch 'dev' set up to track remote branch 'dev' from 'origin'.
 ~$*
 node_modules/
 ```
-* gitattribute  **-text**
+* gitattributes  **-text**
 ```
 * -text
+[core]
+    autocrlf = true
 ```
 * git-hook  **pre-commit**
 ```
