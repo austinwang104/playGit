@@ -179,17 +179,6 @@ git會開啟預設的editor
 存檔後，commit內容即更新
 ```
 
-#### git 版號
-> `git rev-parse --short dev`
-```
-905ba45
-```
-> `git rev-list --count --all dev`
-```
-174
-```
-
-
 ### 情境：如何取消設定檔的版控 **untrack**
 ```
 git rm --cache <filename>   && git add . && git push
@@ -442,6 +431,16 @@ node_modules/
 ```
 ehco hello-world
 ```
+* git 版號
+> `git rev-parse --short dev`
+```
+905ba45
+```
+> `git rev-list --count --all dev`
+```
+174
+```
+
 
 
 ## QA
