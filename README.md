@@ -354,6 +354,14 @@ H 100644 2e8bae6e7e744237acb33ab5cd41caa167ddf4de 0     README.md
 From hub104:austinwang104/playGit
  ! 8792dae..5d30e16  dev        -> origin/dev  (unable to update local ref)
 ```
+> `git branch -b <new branch>`
+> `git branch -d <branch>`
+> `git branch -D <branch>`
+```
+有些刪除如果失敗的話，可能該branch的work-tree is not empty
+如果確定work-tree的資料不需要留下的話，可以用-D來強制刪除
+如果最後一朝強制刪除都無法刪除的話???(怎麼可能??太詭異了??要怎麼辦??)
+```
 
 ### tracking(remote)
 > `git branch -u origin/dev`
