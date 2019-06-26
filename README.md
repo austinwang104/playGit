@@ -7,7 +7,7 @@
 4. commit-operator    **`reset`, `revert`, `cherry-pick`**
 5. branch   **`tracking(remote)`, `merge`, `rebase`, `pull`, `push`**
 6. Gitlab   **`issue tracking`, `branch by issue(?)`, `pull request`**
-7. addition **`gitignore`, `gitattribute`, `git-hook`**
+7. addition **`gitconfig`, `gitignore`, `gitattributes`, `git-hook`**
 8. reference
     * [連猴子都能懂得Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro2_4.html)
     * [ihower的Git教室](https://ihower.tw/git/index.html)
