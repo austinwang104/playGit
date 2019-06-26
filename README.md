@@ -240,7 +240,9 @@ b8369c9 HEAD@{8}: reset: moving to HEAD^^^^^^^^^^^
 
 ### reset
 切換到不同的`commit node`
+
 ![](https://github.com/austinwang104/playGit/blob/dev/img/capture_stepup6_3_1.png?raw=true)
+
 > `git reset --hard HEAD`
 > `get reset --hard origin/dev`
 ```
@@ -268,7 +270,9 @@ Changes not staged for commit:
 ```
 
 ### revert
-把指定的commit做刪除之後再建立一個commit。
+
+    把指定的commit做刪除之後再建立一個commit。
+
 ![](https://github.com/austinwang104/playGit/blob/dev/img/git-revert.png?raw=true)
 > `git revert e1a9f6b`
 ```
