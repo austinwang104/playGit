@@ -37,7 +37,6 @@
 * 程式碼錯誤影響作業 **個別排除**
 
 
-
 ### Git特點
 
 #### 快照**snapshot**的方式記錄commit **切換快速**
@@ -178,6 +177,16 @@ Changes to be committed:
 git會開啟預設的editor
 自由編輯後可以進行存檔
 存檔後，commit內容即更新
+```
+
+#### git 版號
+> `git rev-parse --short dev`
+```
+905ba45
+```
+> `git rev-list --count dev`
+```
+174
 ```
 
 
