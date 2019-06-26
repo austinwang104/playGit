@@ -60,7 +60,9 @@
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/cheetsheet.png?raw=true)
 
-* 如果使用`bash`的話，應該會想要採用透過ssh的方式認證。**因為如果透過https認證的話，每次認證需要輸入帳密。`正常的心理反應是會很惱人`**
+* 如果使用`bash`的話，應該會想要採用透過ssh的方式認證。
+
+    **因為如果透過https認證的話，每次認證需要輸入帳密。`正常的心理反應是會很惱人`**
 
 ### git clone
 從伺服器上直接取得git branch & track
