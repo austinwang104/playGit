@@ -3,5 +3,5 @@
     "ok":"200",
     "no-found":404,
     "skip-worktree":"pull ok2",
-    "hello": "conflicts"
+    "conflicts": "hello"
 }
