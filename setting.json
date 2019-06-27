@@ -4,5 +4,6 @@
     "no-found":404,
     "skip-worktree":"pull ok2",
     "conflicts": "hello",
-    "local":"conflictsAAAAAAAAAAAAAAAAAA"
+    "local":"conflictsAAAAAAAAAAAAAAAAAA",
+    "dev":"conflicts"
 }
