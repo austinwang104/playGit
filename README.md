@@ -13,6 +13,8 @@
     * [ihower的Git教室](https://ihower.tw/git/index.html)
     * [git-document](https://git-scm.com/book/en/v2)
     * [ATLASSIAN](https://www.atlassian.com/cs/git/tutorials/learn-git-with-bitbucket-cloud)
+    * [git-wiki](https://zh.wikipedia.org/wiki/Git)
+    
 
 
 ## using SVN
@@ -478,6 +480,12 @@ ehco hello-world
 ```
 174
 ```
+
+## git relation
+
+* git service: `BerliOS`,`Beanstalk`,`Bitbucket`,`CodePlex`,`GitHub`,`gitorious`,`GNU Savannah`,`Google Code`,`JavaForge`,`Pikacode`,`SourceForge`,`碼雲 Gitee`,`CSDN CODE`,`Coding`,`gitlab`
+
+* git tool: `GitHub Desktop`,`Git for Windows`,`TortoiseGit`,`SourceTree`,`GitEye`
 
 ## QA
 
