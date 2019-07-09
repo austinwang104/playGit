@@ -2,5 +2,6 @@
     "abc":"123",
     "ok":"200",
     "no-found":404,
-    "good":1
+    "good":1,
+    "worse":2
 }
