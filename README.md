@@ -394,6 +394,12 @@ matching-->(略)push all matching branches. All branches having the same name in
 > git commit -m commitA
 >
 > git commit -m commitB
+>
+> git checkout master
+> 
+> git merge dev   # 隨後會看到所有的commit都濃縮成一個`merge commit`
+> 
+> git commit -m commitD 
 
 ![](https://github.com/austinwang104/playGit/blob/dev/img/Branch-1.png?raw=true)
 ### rebase
