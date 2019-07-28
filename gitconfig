@@ -1,0 +1,6 @@
+[alias]
+        spull = !git stash save -u "tmp" && git fetch -a && git pull --rebase && git stash pop && git status && git stash list 
+        adog = !git log --all --decorate --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an %Cgreen%d %Creset%s' --graph --date='format:%y-%m-%d %H'
+        tpull = !git stash save -u "tmp" && git fetch && git pull --rebase -X=theirs && git stash pop && git stash list && git status
+        spush = !sh -c 'git add . && git commit -m \"${1-update}\" && git push' -
+        sfile = !sh -c 'git log --all --name-only --pretty=format: | sort -u | grep ${1}' -

@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "2b289c7b-64ee-4241-8af7-b7455c432586",
+		"name": "os10030",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth/signin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7ff456b1-5b81-41c2-9cf3-1a7c3b652b4f",
+						"exec": [
+							"pm.globals.set(\"my_cookie\", pm.cookies.get('eHRMS2.connect.sid'));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"adam.wang\",\n    \"password\": \"e104\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:2020/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth/signout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"adam.wang\",\n    \"password\": \"e104\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:2020/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unit/find",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"laborNoOrName\": \"\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:2020/api/os10030/unit/find",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"os10030",
+						"unit",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unit/new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"laborNo\": \"\",\n    \"laborName\": {\n        \"zh_TW\": \"zh name\",\n        \"zh_CN\": \"cn name\",\n        \"en_US\": \"en name\"\n    },\n    \"snoId\": 0,\n    \"buildDate\": \"2019-04-16\",\n    \"tel\": \"12345\",\n    \"postalCode\": \"300\",\n    \"address\": \"FFFF\",\n    \"laborNotes\": \"G\",\n    \"isEmp\": \"0\",\n    \"leaderId\": 0,\n    \"leaderName\": \"2222\",\n    \"contactName\": \"123\",\n    \"contactTel\": \"2222\",\n    \"contactEmail\": \"a@b.com\",\n    \"sortOrder\": 5,\n    \"isAct\": \"0\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:2020/api/os10030/unit/new",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"os10030",
+						"unit",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unit/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"96\",\n    \"laborNo\": \"12345tt\",\n    \"laborName\": {\n        \"zh_TW\": \"zh namett\",\n        \"zh_CN\": \"cn namett\",\n        \"en_US\": \"en namett\"\n    },\n    \"snoId\": 0,\n    \"buildDate\": \"2019-04-16\",\n    \"tel\": \"12345\",\n    \"postalCode\": \"300\",\n    \"address\": \"FFFF\",\n    \"laborNotes\": \"G\",\n    \"isEmp\": \"0\",\n    \"leaderId\": 0,\n    \"leaderName\": \"2222\",\n    \"contactName\": \"123\",\n    \"contactTel\": \"2222\",\n    \"contactEmail\": \"a@b.com\",\n    \"sortOrder\": 5,\n    \"isAct\": \"0\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:2020/api/os10030/unit/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"os10030",
+						"unit",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unit/get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:2020/api/os10030/unit/get/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"os10030",
+						"unit",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unit/delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ids\": [\n        \"b\",\n        \"a\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:2020/api/os10030/unit/delete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"os10030",
+						"unit",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "Cookie",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{my_cookie}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "24a5fa56-554c-4735-88f6-e6ab11cc92e4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0186c53a-ba9d-4a0a-b2a6-3134cd53d430",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
